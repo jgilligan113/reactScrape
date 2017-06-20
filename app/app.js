@@ -1,29 +1,13 @@
 import React, { Component } from 'react';
-import CommentForm from './components/CommentForm';
+import CommentPanel from './components/CommentPanel'
+import TopicPanel from './components/TopicPanel'
 
-class App extends Component {
-    constructor() {
-        super();
+const App = () => (
+    <div>
+        <TopicPanel />
+        <CommentPanel />
+    </div>
 
-        this.state = {
-            articles: [],
-        }
-
-    }
-
-
-    
-
-    render() {
-        return (
-            <div className='App'>
-                
-                <CommentForm />
-            </div>
-        )
-    }
-
-
-}
+)
 
 export default App;
